@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.calculator{
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: solid 1px #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.result{
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.btns{
+    display: flex;
+}
+.btn_left{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.btn_right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+button{
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 82px;
+    height: 48px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+.clear {
+    background-color: #ff4136;
+    color: #fff;
+}
+.operator {
+    background-color: #0074d9;
+    color: #fff;
+}
+.equals {
+    height: 60%;
+    background-color: #01ff70;
+    color: #fff;
+}
+.number{
+    background-color: #fff;
+}
+button:hover{
+    background-color: #ccc;
+}
+.clearChar{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoTstuh0kvGeqCkcVNsxE-qt9a9KMHUdLI2A&usqp=CAU);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.clearChar:hover{
+    background-color: #ccc;
+    opacity: .4;
+}
